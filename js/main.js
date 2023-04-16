@@ -54,7 +54,7 @@ function addFields () {
     <input type="text" name="fname" class="nameinput" required>
     <label for="lname">last name:</label>
     <input type="text" name="lname" class="nameinput" required>
-    <button type="button" onclick="removeField(this)">Remove</button>`;
+    <button type="button" onclick="removeField(this)">X</button>`;
     inputFields.appendChild(newField);
   }
 }
@@ -63,11 +63,10 @@ function addButtons () {
   const myButtons = document.getElementById("myButtons");
   var addButton = document.createElement("button");
   addButton.type = "button";
-  addButton.textContent = "Add Field";
+  addButton.textContent = "add field";
   addButton.onclick = addField;
 
-
-  var submitButton = document.createElement("button");
+  var submitButton = document.createElement("button"); 
   submitButton.type = "submit";
   submitButton.value = "submit";
   submitButton.onclick = getNames;
